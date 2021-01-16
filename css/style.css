@@ -44,7 +44,7 @@ ul li a:hover:before {
   color: #fff;
   letter-spacing: 0.2em;
   font-size: 2em;
-  font-family: "Lato", sans-serif;
+  font-family: poppins;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -58,9 +58,14 @@ ul li a:hover:before {
 }
 
 /* carousel */
+
 @media (min-width: 1000px) and (max-width: 1400px) {
   .carousel {
     height: 400px;
+  }
+
+  .carousel-container {
+    padding: 0 80px;
   }
 
   .carousel-item img {
@@ -69,7 +74,50 @@ ul li a:hover:before {
 }
 
 .owl-nav {
-  display: none;
+  font-weight: bold;
+  font-size: 5em;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50px;
+  left: -30px;
+  color: #424242;
+  background: #e0e0e0;
+  border-radius: 2px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 50px;
+  right: -30px;
+  color: #424242;
+  background: #e0e0e0;
+  border-radius: 2px;
+}
+
+@media (min-width: 200px) and (max-width: 650px) {
+  .owl-nav {
+    display: none;
+  }
+
+  .owl-dots {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .owl-dot span {
+    width: 10px;
+    height: 10px;
+    background: #adaca8;
+    display: block;
+    border-radius: 30px;
+    margin: 5px 7px;
+  }
+
+  .owl-dot.active span {
+    background: #333;
+  }
 }
 
 /* title */
@@ -219,4 +267,34 @@ textarea {
   color: #000;
   font-family: dosis;
   font-weight: bolder;
+}
+
+/* footer */
+.page-footer h5 {
+  color: #e0e0e0;
+  font-family: poppins;
+  font-size: 2em;
+}
+
+.footer-copyright {
+  padding: 0;
+}
+
+.footer-copyright .container .row {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-copyright .designer {
+  text-align: right;
+}
+
+@media (min-width: 200px) and (max-width: 650px) {
+  .footer-copyright {
+    text-align: center;
+  }
+
+  .footer-copyright .designer {
+    text-align: center;
+  }
 }
